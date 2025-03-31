@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "target": "es2016", // Use ES2016 as the target version
+        "module": "commonjs", // Use CommonJS module system (default for Node.js)
+        "outDir": "./dist", // Output compiled files to the "dist" folder
+        "rootDir": "./src", // Root directory of your source files
+        "strict": true, // Enable strict type checking
+        "esModuleInterop": true, // Enable compatibility with CommonJS modules
+        "forceConsistentCasingInFileNames": true, // Ensure consistent casing in file names
+        "moduleResolution": "node", // Use Node.js module resolution strategy (important for resolving local modules)
+        "resolveJsonModule": true // Allow importing .json files if necessary
+    },
+    "include": ["src"] // Include all TypeScript files inside the "src" folder
+}
