@@ -9,8 +9,8 @@ const Conversation = sequelize.define("Conversation", {
         autoIncrement: true,
         primaryKey: true,
     },
-    senderId: { type: DataTypes.INTEGER, allowNull: false, references: { model: User, key: "id" } },
-    receiverId: {
+    user1Id: { type: DataTypes.INTEGER, allowNull: false, references: { model: User, key: "id" } },
+    user2Id: {
         type: DataTypes.INTEGER,
         allowNull: false,
         references: { model: User, key: "id" },
