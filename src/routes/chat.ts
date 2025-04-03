@@ -9,7 +9,7 @@ import isAuth from "../middleware/auth";
 
 const chatRouter = express.Router();
 
-chatRouter.get("/users/getAllUsers", isAuth, getAllUsers);
+chatRouter.post("/users/getAllUsers", isAuth, getAllUsers);
 chatRouter.post("/conversation/createConversation", isAuth, createConversation);
 chatRouter.post("/conversation/getMessagesByConversation", isAuth, getMessagesByConversation);
 chatRouter.post("/message/sendMessage", isAuth, sendMessage);
